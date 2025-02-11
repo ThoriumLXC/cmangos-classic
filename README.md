@@ -1,0 +1,2 @@
+# cmangos-classic
+Stub
