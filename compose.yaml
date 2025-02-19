@@ -1,6 +1,6 @@
 services:
   database:
-    image: cmangos-classicdb:bazel
+    image: docker.io/thoriumlxc/cmangos-classicdb:2025.02.18
     restart: unless-stopped
     environment:
       - TZ=Etc/UTC
@@ -21,7 +21,7 @@ services:
     command: tcp database:3306 -t 600s -i 5s
 
   realmd:
-    image: cmangos-classic:default
+    image: docker.io/thoriumlxc/cmangos-classic:2025.02.18
     command: realmd
     ulimits:
       nofile: 1024
@@ -35,7 +35,7 @@ services:
       - TZ=Etc/UTC
 
   mangosd:
-    image: cmangos-classic:default
+    image: docker.io/thoriumlxc/cmangos-classic:2025.02.18
     command: mangosd
     ulimits:
       nofile: 1024
