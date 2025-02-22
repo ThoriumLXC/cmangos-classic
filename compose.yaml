@@ -118,9 +118,9 @@ services:
       - TZ=Etc/UTC
     volumes:
       - cmangos-classic-map-data:/opt/mangos/storage/data:ro
-      - ./mangosd.conf:/opt/vmangos/config/mangosd.conf:ro
-      - ./logs/mangosd:/opt/vmangos/storage/logs
-      - ./storage/honor:/opt/vmangos/storage/honor
+      - ./mangosd.conf:/opt/mangos/config/mangosd.conf:ro
+      - ./logs/mangosd:/opt/mangos/storage/logs
+      - ./storage/honor:/opt/mangos/storage/honor
 
 volumes:
   vmangos-database:
