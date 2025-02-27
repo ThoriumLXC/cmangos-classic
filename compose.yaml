@@ -86,7 +86,7 @@ services:
       start_period: 5m
     restart: unless-stopped
     volumes:
-      - ./realmd.conf:/opt/mangos/config/realmd.conf:ro
+      - ./realmd.conf:/opt/mangos/etc/realmd.conf:ro
       - ./logs/realmd:/opt/mangos/storage/logs
     ports:
       - 3724:3724
@@ -118,7 +118,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - cmangos-classic-map-data:/opt/mangos/storage/data:ro
-      - ./mangosd.conf:/opt/mangos/config/mangosd.conf:ro
+      - ./mangosd.conf:/opt/mangos/etc/mangosd.conf:ro
       - ./logs/mangosd:/opt/mangos/storage/logs
       - ./storage/honor:/opt/mangos/storage/honor
 
