@@ -123,6 +123,6 @@ services:
       - ./storage/honor:/opt/mangos/storage/honor
 
 volumes:
-  vmangos-database:
+  cmangos-classic-database:
   cmangos-classic-map-data:
     external: true
